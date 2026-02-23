@@ -1,7 +1,6 @@
 /* eslint-disable max-statements */
 /* eslint-disable max-lines-per-function */
 import express from 'express';
-import cors from 'cors';
 import ContactListConnector from './database.js';
 import dotenv from 'dotenv';
 
@@ -56,7 +55,7 @@ function findIdxByID(id) {
 
 // middleware
 app.use(express.static('dist'));
-app.use(cors(), express.json());
+app.use(express.json());
 
 
 // ROUTES
