@@ -1,0 +1,47 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/api/contacts
+
+###
+
+GET http://localhost:3000/api/contacts/1
+
+###
+
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+  "name": "Chuck Testa",
+  "number": "111-111-1111"
+}
+
+###
+
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "number": "111-111-1111"
+}
+
+### 
+
+PUT http://localhost:3000/api/contacts/1
+Content-Type: application/json
+
+{
+  "name": "Jane Joe",
+  "number": "888-888-8888"
+}
+
+###
+
+DELETE http://localhost:3000/api/contacts/3
+
+###
+
+DELETE http://localhost:3000/api/contacts/6
